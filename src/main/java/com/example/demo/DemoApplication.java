@@ -18,7 +18,7 @@ public class DemoApplication {
 
 	@GetMapping(value = "/")
 	public String helloWorld() {
-		String response = "<H1> Hello World   </H1>" + new Date();
+		String response = "<H1> Hello World - v1  </H1>" + new Date();
 		LOG.log(Level.DEBUG, response);
 
 		return response;
