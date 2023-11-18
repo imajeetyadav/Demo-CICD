@@ -52,7 +52,7 @@ jobs:
         with:
           host: ${{ secrets.AWS_IP }}
           username: ${{ secrets.AWS_USERNAME }}
-          password: ${{ secrets.AWS_SSH_KEY }}
+          key: ${{ secrets.AWS_SSH_KEY }}
           port: 22
           script: sudo systemctl restart demo
           
@@ -82,7 +82,7 @@ jobs:
           username: ${{ secrets.AZURE_USERNAME }}
           password: ${{ secrets.AZURE_SSH_KEY }}
           port: 22
-          script: sudo systemctl restart demo
+          key: sudo systemctl restart demo
 
         
       
