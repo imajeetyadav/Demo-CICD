@@ -80,9 +80,9 @@ jobs:
         with:
           host: ${{ secrets.AZURE_IP }}
           username: ${{ secrets.AZURE_USERNAME }}
-          password: ${{ secrets.AZURE_SSH_KEY }}
+          key: ${{ secrets.AZURE_SSH_KEY }}
           port: 22
-          key: sudo systemctl restart demo
+          script: sudo systemctl restart demo
 
         
       
